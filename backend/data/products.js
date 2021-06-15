@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Airpods Wireless Bluetooth Headphones',
     image: '/images/airpods.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'iPhone 11 Pro 256GB Memory',
     image: '/images/phone.jpg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'Cannon EOS 80D DSLR Camera',
     image: '/images/camera.jpg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '4',
     name: 'Sony Playstation 4 Pro White Version',
     image: '/images/playstation.jpg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '5',
     name: 'Logitech G-Series Gaming Mouse',
     image: '/images/mouse.jpg',
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'Amazon Echo Dot 3rd Generation',
     image: '/images/alexa.jpg',
     description:
@@ -78,7 +72,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '7',
     name: 'Black Headphones 1',
     image: '/images/black_headphone1.jpg',
     description:
@@ -91,7 +84,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '8',
     name: 'Black Perfume',
     image: '/images/black_perfume.jpg',
     description:
@@ -104,7 +96,6 @@ const products = [
     numReviews: 5,
   },
   {
-    _id: '9',
     name: 'Black sport Sneakers',
     image: '/images/black_sneaker.jpg',
     description:
@@ -117,7 +108,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '10',
     name: 'camera',
     image: '/images/camera.jpg',
     description:
@@ -130,7 +120,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '11',
     name: 'Dell XPS 15, 13 inch Laptop',
     image: '/images/dellXPS15.jpg',
     description:
@@ -143,7 +132,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '12',
     name: 'Golden Perfume',
     image: '/images/golden_perfume.jpg',
     description:
@@ -156,7 +144,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '13',
     name: 'Apple iMac (2019)',
     image: '/images/iMac.jpg',
     description:
@@ -169,7 +156,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '14',
     name: 'Apple iPhone 11 (white)',
     image: '/images/iPhone11_1.jpg',
     description:
@@ -182,7 +168,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '15',
     name: 'Apple iPhone 11 (red)',
     image: '/images/iPhone11red.jpg',
     description:
@@ -195,7 +180,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '16',
     name: 'Apple MacBook pro 15 inch',
     image: '/images/macbook1.jpg',
     description:
@@ -208,7 +192,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '17',
     name: 'Apple MacBook pro 13 inch',
     image: '/images/macbook2.jpg',
     description:
@@ -221,7 +204,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '18',
     name: 'Metallic Headphones',
     image: '/images/metallic_headphone.jpg',
     description:
@@ -234,7 +216,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '19',
     name: 'Google pixel 3a',
     image: '/images/pixel3a.jpg',
     description:
@@ -247,7 +228,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '20',
     name: 'Google pixel 4',
     image: '/images/pixel4.jpg',
     description:
@@ -260,7 +240,6 @@ const products = [
     numReviews: 9,
   },
   {
-    _id: '21',
     name: 'Red Sneakers I',
     image: '/images/red_sneaker1.jpg',
     description:
@@ -273,7 +252,6 @@ const products = [
     numReviews: 1,
   },
   {
-    _id: '22',
     name: 'Red Sneakers II',
     image: '/images/red_sneaker2.jpg',
     description:
@@ -286,7 +264,6 @@ const products = [
     numReviews: 2,
   },
   {
-    _id: '23',
     name: 'Revolt Sneakers',
     image: '/images/revolt_sneaker.jpg',
     description:
@@ -299,7 +276,6 @@ const products = [
     numReviews: 3,
   },
   {
-    _id: '24',
     name: 'Sneaker',
     image: '/images/sneaker1.jpg',
     description:
@@ -312,7 +288,6 @@ const products = [
     numReviews: 11,
   },
   {
-    _id: '25',
     name: 'Yellow Sneakers ',
     image: '/images/yellow_sneaker.jpg',
     description:
