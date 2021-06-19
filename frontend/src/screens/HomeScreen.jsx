@@ -1,37 +1,40 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import Product from '../components/Product'
-
+import { listProducts } from '../actions/productActions'
 import { Row, Col } from 'react-bootstrap' 
+import Loader from '../components/Loader'
+import Message from '../components/Message'
 
 const HomeScreen = () => {
 
-    const [products, setProducts] = useState([])
+    const dispatch = useDispatch()
+
+    const productList = useSelector(state => state.productList)
+    const { loading, error, products } = productList
 
     useEffect(() => {
-        const fetchProducts = async () => {
-            const { data } = await axios.get('/api/products')
-            setProducts(data)
+       dispatch(listProducts())
+    }, [dispatch])
 
-            // this is implemented by destructuring data from the response (res) got from the GET request
-            // however this can also be written as 
-            // const res = await axios.get('/api/products')
-            // and access the data as res.data 
-        }    
-
-        fetchProducts()
-    }, [])
 
     return (
         <>
             <h1>Latest Products</h1>
-            <Row className='my-5'>
-                {products.map((product) => (
-                    <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-                        <Product product={product}/>
-                    </Col>
-                ))}    
-            </Row>   
+            { loading ? (
+                <Loader/>
+            ) : error ? (
+                <Message variant='danger'>{error}</Message>
+            ) : (
+                <Row className='my-5'>
+                    {products.map((product) => (
+                        <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+                            <Product product={product}/>
+                        </Col>
+                    ))}    
+                </Row>
+            )}
+               
         </>
     )
 }
